@@ -1,5 +1,3 @@
-using Newtonsoft.Json;
-
 namespace CoreAnalyzer
 {
     public class Rna
@@ -8,20 +6,9 @@ namespace CoreAnalyzer
 
         public List<Protein>[] Proteins { get; private set; }
 
-        private readonly List<AminoAcid> aminoAcids;
-
         public Rna(string rna)
         {
             RnaString = rna;
-
-            var AminoAcidsJsonPath =
-                System.IO.Path.GetDirectoryName(
-                    System.Diagnostics.Process.GetCurrentProcess().MainModule!.FileName
-                ) + "/AminoAcids.json";
-
-            string jsonString = File.ReadAllText(AminoAcidsJsonPath);
-
-            aminoAcids = JsonConvert.DeserializeObject<List<AminoAcid>>(jsonString)!;
 
             List<Task> tasks = new List<Task>();
 
@@ -93,14 +80,14 @@ namespace CoreAnalyzer
 
         private AminoAcid GetAminoAcid(string Nucleotides)
         {
-          var aminoAcid = 
-                aminoAcids.Where(AminoAcid => AminoAcid.Nucleotides.Contains(Nucleotides))
+            var aminoAcid = AminoAcidsHelper
+                .AllAminoAcids.Where(AminoAcid => AminoAcid.Nucleotides.Contains(Nucleotides))
                 .FirstOrDefault();
 
-          if(aminoAcid is null)
-            throw new ArgumentException();
+            if (aminoAcid is null)
+                throw new ArgumentException();
 
-          return aminoAcid;
+            return aminoAcid;
         }
     }
 }
