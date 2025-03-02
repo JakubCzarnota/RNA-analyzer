@@ -1,0 +1,476 @@
+[
+  {
+    "FullName": "Alanine",
+    "Symbol3": "Ala",
+    "Symbol1": "A",
+    "Nucleotides": [
+      "GCU",
+      "GCC",
+      "GCA",
+      "GCG"
+    ],
+    "ClassName": "Aliphatic",
+    "Polarity": "Nonpolar",
+    "NetCharge": "Neutral",
+    "HydropathyIndex": 1.8,
+    "MolarAbsorptivityWavelength": null,
+    "MolarAbsorptivityCoefficient": null,
+    "MolecularMass": 89.094,
+    "AbundanceInProteins": 8.76,
+    "StandardGeneticCodingNotation": [
+      "GCN"
+    ],
+    "IsoelectricPoint": 6
+  },
+  {
+    "FullName": "Arginine",
+    "Symbol3": "Arg",
+    "Symbol1": "R",
+    "Nucleotides": [
+      "CGG",
+      "CGA",
+      "CGC",
+      "CGU",
+      "AGA",
+      "AGG"
+    ],
+    "ClassName": "FixedCation",
+    "Polarity": "BasicPolar",
+    "NetCharge": "Positive",
+    "HydropathyIndex": -4.5,
+    "MolarAbsorptivityWavelength": null,
+    "MolarAbsorptivityCoefficient": null,
+    "MolecularMass": 174.203,
+    "AbundanceInProteins": 5.78,
+    "StandardGeneticCodingNotation": [
+      "MGR",
+      "CGY"
+    ],
+    "IsoelectricPoint": 10.8
+  },
+  {
+    "FullName": "Asparagine",
+    "Symbol3": "Asn",
+    "Symbol1": "N",
+    "Nucleotides": [
+      "AAU",
+      "AAC"
+    ],
+    "ClassName": "Amide",
+    "Polarity": "Polar",
+    "NetCharge": "Neutral",
+    "HydropathyIndex": -3.5,
+    "MolarAbsorptivityWavelength": null,
+    "MolarAbsorptivityCoefficient": null,
+    "MolecularMass": 132.119,
+    "AbundanceInProteins": 3.93,
+    "StandardGeneticCodingNotation": [
+      "AAY"
+    ],
+    "IsoelectricPoint": 5.7
+  },
+  {
+    "FullName": "Aspartate",
+    "Symbol3": "Asp",
+    "Symbol1": "D",
+    "Nucleotides": [
+      "GAU",
+      "GAC"
+    ],
+    "ClassName": "Anion",
+    "Polarity": "BrønstedBase",
+    "NetCharge": "Negative",
+    "HydropathyIndex": -3.5,
+    "MolarAbsorptivityWavelength": null,
+    "MolarAbsorptivityCoefficient": null,
+    "MolecularMass": 133.104,
+    "AbundanceInProteins": 5.49,
+    "StandardGeneticCodingNotation": [
+      "GAY"
+    ],
+    "IsoelectricPoint": 3
+  },
+  {
+    "FullName": "Cysteine",
+    "Symbol3": "Cys",
+    "Symbol1": "C",
+    "Nucleotides": [
+      "UGU",
+      "UGC"
+    ],
+    "ClassName": "Thiol",
+    "Polarity": "BrønstedAcid",
+    "NetCharge": "Neutral",
+    "HydropathyIndex": 2.5,
+    "MolarAbsorptivityWavelength": [
+      "250"
+    ],
+    "MolarAbsorptivityCoefficient": [
+      "0.3"
+    ],
+    "MolecularMass": 121.154,
+    "AbundanceInProteins": 1.38,
+    "StandardGeneticCodingNotation": [
+      "UGY"
+    ],
+    "IsoelectricPoint": 5.07
+  },
+  {
+    "FullName": "Glutamine",
+    "Symbol3": "Gln",
+    "Symbol1": "Q",
+    "Nucleotides": [
+      "CAA",
+      "CAG"
+    ],
+    "ClassName": "Amide",
+    "Polarity": "Polar",
+    "NetCharge": "Neutral",
+    "HydropathyIndex": -3.5,
+    "MolarAbsorptivityWavelength": null,
+    "MolarAbsorptivityCoefficient": null,
+    "MolecularMass": 146.146,
+    "AbundanceInProteins": 3.93,
+    "StandardGeneticCodingNotation": [
+      "GAR"
+    ],
+    "IsoelectricPoint": 5.7
+  },
+  {
+    "FullName": "Glutamate",
+    "Symbol3": "Glu",
+    "Symbol1": "E",
+    "Nucleotides": [
+      "GAA",
+      "GAG"
+    ],
+    "ClassName": "Anion",
+    "Polarity": "BrønstedBase",
+    "NetCharge": "Negative",
+    "HydropathyIndex": -3.5,
+    "MolarAbsorptivityWavelength": null,
+    "MolarAbsorptivityCoefficient": null,
+    "MolecularMass": 147.131,
+    "AbundanceInProteins": 6.74,
+    "StandardGeneticCodingNotation": [
+      "CAR"
+    ],
+    "IsoelectricPoint": 3.2
+  },
+  {
+    "FullName": "Glycine",
+    "Symbol3": "Gly",
+    "Symbol1": "G",
+    "Nucleotides": [
+      "GGU",
+      "GGC",
+      "GGA",
+      "GGG"
+    ],
+    "ClassName": "Aliphatic",
+    "Polarity": "Nonpolar",
+    "NetCharge": "Neutral",
+    "HydropathyIndex": -0.4,
+    "MolarAbsorptivityWavelength": null,
+    "MolarAbsorptivityCoefficient": null,
+    "MolecularMass": 75.067,
+    "AbundanceInProteins": 7.03,
+    "StandardGeneticCodingNotation": [
+      "GGN"
+    ],
+    "IsoelectricPoint": 5.97
+  },
+  {
+    "FullName": "Histidine",
+    "Symbol3": "His",
+    "Symbol1": "H",
+    "Nucleotides": [
+      "CAU",
+      "CAC"
+    ],
+    "ClassName": "AromaticCation",
+    "Polarity": "BasicPolar",
+    "NetCharge": "Positive",
+    "HydropathyIndex": -3.2,
+    "MolarAbsorptivityWavelength": [
+      211
+    ],
+    "MolarAbsorptivityCoefficient": [
+      5.9
+    ],
+    "MolecularMass": 155.156,
+    "AbundanceInProteins": 2.18,
+    "StandardGeneticCodingNotation": [
+      "CAY"
+    ],
+    "IsoelectricPoint": 7.6
+  },
+  {
+    "FullName": "Isoleucine",
+    "Symbol3": "Ile",
+    "Symbol1": "I",
+    "Nucleotides": [
+      "AUU",
+      "AUC",
+      "AUA"
+    ],
+    "ClassName": "Aliphatic",
+    "Polarity": "Nonpolar",
+    "NetCharge": "Neutral",
+    "HydropathyIndex": 4.5,
+    "MolarAbsorptivityWavelength": null,
+    "MolarAbsorptivityCoefficient": null,
+    "MolecularMass": 131.175,
+    "AbundanceInProteins": 5.49,
+    "StandardGeneticCodingNotation": [
+      "AUH"
+    ],
+    "IsoelectricPoint": 6
+  },
+  {
+    "FullName": "Leucine",
+    "Symbol3": "Leu",
+    "Symbol1": "L",
+    "Nucleotides": [
+      "UUA",
+      "UUG",
+      "CUU",
+      "CUC",
+      "CUA",
+      "CUG"
+    ],
+    "ClassName": "Aliphatic",
+    "Polarity": "Nonpolar",
+    "NetCharge": "Neutral",
+    "HydropathyIndex": 3.8,
+    "MolarAbsorptivityWavelength": null,
+    "MolarAbsorptivityCoefficient": null,
+    "MolecularMass": 131.175,
+    "AbundanceInProteins": 9.68,
+    "StandardGeneticCodingNotation": [
+      "YUR",
+      "CUY"
+    ],
+    "IsoelectricPoint": 5.98
+  },
+  {
+    "FullName": "Lysine",
+    "Symbol3": "Lys",
+    "Symbol1": "K",
+    "Nucleotides": [
+      "AAA",
+      "AAG"
+    ],
+    "ClassName": "Cation",
+    "Polarity": "BrønstedAcid",
+    "NetCharge": "Positive",
+    "HydropathyIndex": -3.9,
+    "MolarAbsorptivityWavelength": null,
+    "MolarAbsorptivityCoefficient": null,
+    "MolecularMass": 146.19,
+    "AbundanceInProteins": 5.95,
+    "StandardGeneticCodingNotation": [
+      "AAR"
+    ],
+    "IsoelectricPoint": 9.7
+  },
+  {
+    "FullName": "Methionine",
+    "Symbol3": "Met",
+    "Symbol1": "M",
+    "Nucleotides": [
+      "AUG"
+    ],
+    "ClassName": "Thioether",
+    "Polarity": "Nonpolar",
+    "NetCharge": "Neutral",
+    "HydropathyIndex": 1.9,
+    "MolarAbsorptivityWavelength": null,
+    "MolarAbsorptivityCoefficient": null,
+    "MolecularMass": 149.208,
+    "AbundanceInProteins": 2.28,
+    "StandardGeneticCodingNotation": [
+      "AUG"
+    ],
+    "IsoelectricPoint": 5.7
+  },
+  {
+    "FullName": "Phenylalanine",
+    "Symbol3": "Phe",
+    "Symbol1": "F",
+    "Nucleotides": [
+      "UUU",
+      "UUC"
+    ],
+    "ClassName": "Aromatic",
+    "Polarity": "Nonpolar",
+    "NetCharge": "Neutral",
+    "HydropathyIndex": 2.8,
+    "MolarAbsorptivityWavelength": [
+      257,
+      206,
+      188
+    ],
+    "MolarAbsorptivityCoefficient": [
+      0.2,
+      9.3,
+      60.0
+    ],
+    "MolecularMass": 165.192,
+    "AbundanceInProteins": 3.87,
+    "StandardGeneticCodingNotation": [
+      "UUY"
+    ],
+    "IsoelectricPoint": 5.48
+  },
+  {
+    "FullName": "Proline",
+    "Symbol3": "Pro",
+    "Symbol1": "P",
+    "Nucleotides": [
+      "CCU",
+      "CCC",
+      "CCA",
+      "CCG"
+    ],
+    "ClassName": "Cyclic",
+    "Polarity": "Nonpolar",
+    "NetCharge": "Neutral",
+    "HydropathyIndex": -1.6,
+    "MolarAbsorptivityWavelength": null,
+    "MolarAbsorptivityCoefficient": null,
+    "MolecularMass": 115.132,
+    "AbundanceInProteins": 5.09,
+    "StandardGeneticCodingNotation": [
+      "CCN"
+    ],
+    "IsoelectricPoint": 6.3
+  },
+  {
+    "FullName": "Serine",
+    "Symbol3": "Ser",
+    "Symbol1": "S",
+    "Nucleotides": [
+      "UCU",
+      "UCC",
+      "UCA",
+      "UCG",
+      "AGU",
+      "AGC"
+    ],
+    "ClassName": "Aliphatic",
+    "Polarity": "Polar",
+    "NetCharge": "Neutral",
+    "HydropathyIndex": -0.8,
+    "MolarAbsorptivityWavelength": null,
+    "MolarAbsorptivityCoefficient": null,
+    "MolecularMass": 105.093,
+    "AbundanceInProteins": 7.08,
+    "StandardGeneticCodingNotation": [
+      "UCN",
+      "AGY"
+    ],
+    "IsoelectricPoint": 5.68
+  },
+  {
+    "FullName": "Threonine",
+    "Symbol3": "Thr",
+    "Symbol1": "T",
+    "Nucleotides": [
+      "ACU",
+      "ACC",
+      "ACA",
+      "ACG"
+    ],
+    "ClassName": "Aliphatic",
+    "Polarity": "Polar",
+    "NetCharge": "Neutral",
+    "HydropathyIndex": -0.7,
+    "MolarAbsorptivityWavelength": null,
+    "MolarAbsorptivityCoefficient": null,
+    "MolecularMass": 119.119,
+    "AbundanceInProteins": 5.53,
+    "StandardGeneticCodingNotation": [
+      "ACN"
+    ],
+    "IsoelectricPoint": 5.6
+  },
+  {
+    "FullName": "Tryptophan",
+    "Symbol3": "Trp",
+    "Symbol1": "W",
+    "Nucleotides": [
+      "UGG"
+    ],
+    "ClassName": "Aromatic",
+    "Polarity": "Nonpolar",
+    "NetCharge": "Neutral",
+    "HydropathyIndex": -0.9,
+    "MolarAbsorptivityWavelength": [
+      280,
+      219
+    ],
+    "MolarAbsorptivityCoefficient": [
+      5.6,
+      47.0
+    ],
+    "MolecularMass": 204.228,
+    "AbundanceInProteins": 1.18,
+    "StandardGeneticCodingNotation": [
+      "UGG"
+    ],
+    "IsoelectricPoint": 5.89
+  },
+  {
+    "FullName": "Tyrosine",
+    "Symbol3": "Tyr",
+    "Symbol1": "Y",
+    "Nucleotides": [
+      "UAU",
+      "UAC"
+    ],
+    "ClassName": "Aromatic",
+    "Polarity": "Polar",
+    "NetCharge": "Neutral",
+    "HydropathyIndex": -1.3,
+    "MolarAbsorptivityWavelength": [
+      274,
+      222,
+      193
+    ],
+    "MolarAbsorptivityCoefficient": [
+      1.4,
+      8.0,
+      48.0
+    ],
+    "MolecularMass": 181.191,
+    "AbundanceInProteins": 3.38,
+    "StandardGeneticCodingNotation": [
+      "UAY"
+    ],
+    "IsoelectricPoint": 5.66
+  },
+  {
+    "FullName": "Valine",
+    "Symbol3": "Val",
+    "Symbol1": "V",
+    "Nucleotides": [
+      "GUU",
+      "GUC",
+      "GUA",
+      "GUG"
+    ],
+    "ClassName": "Aliphatic",
+    "Polarity": "Nonpolar",
+    "NetCharge": "Neutral",
+    "HydropathyIndex": 4.2,
+    "MolarAbsorptivityWavelength": null,
+    "MolarAbsorptivityCoefficient": null,
+    "MolecularMass": 117.148,
+    "AbundanceInProteins": 6.86,
+    "StandardGeneticCodingNotation": [
+      "GUN"
+    ],
+    "IsoelectricPoint": 5.96
+  }
+]
