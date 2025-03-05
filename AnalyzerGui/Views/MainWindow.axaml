@@ -15,6 +15,16 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Grid ColumnDefinitions="1*, 4*">
 
+        <StackPanel Orientation="Vertical">
+            
+            <Button Click="Button_OnClick" Tag="0">Input Rna</Button>
+            <Button Click="Button_OnClick" Tag="1">Protein Overview</Button>
+            
+        </StackPanel>
+        
+        <ContentControl Grid.Column="1" Content="{Binding CurrentUserControl}"/>
+        
+    </Grid>
 </Window>

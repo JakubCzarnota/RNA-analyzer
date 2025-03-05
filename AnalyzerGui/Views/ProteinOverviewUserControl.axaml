@@ -1,0 +1,21 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:AnalyzerGui.ViewModels"
+             xmlns:viewModels="clr-namespace:AnalyzerGui.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="AnalyzerGui.Views.ProteinOverviewUserControl"
+             x:DataType="viewModels:RnaSharedViewModel">
+    
+    <Design.DataContext>
+        <vm:RnaSharedViewModel/>
+    </Design.DataContext>
+    
+    <StackPanel Orientation="Vertical" >
+        <Label Content="{Binding Rna, Converter={StaticResource ProteinCount}, ConverterParameter=0}" />
+        <Label Content="{Binding Rna, Converter={StaticResource ProteinCount}, ConverterParameter=1}" />
+        <Label Content="{Binding Rna, Converter={StaticResource ProteinCount}, ConverterParameter=2}" />
+    </StackPanel>
+    
+</UserControl>
