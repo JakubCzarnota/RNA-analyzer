@@ -17,9 +17,11 @@ public partial class RnaInputUserControl : UserControl
 
     private void Button_OnClick(object? sender, RoutedEventArgs e)
     {
-        var dataContext = this.DataContext as RnaSharedViewModel;
+        var dataContext = (RnaSharedViewModel)this.DataContext!;
 
-        dataContext!.Rna = new Rna(dataContext.RnaString);
-        
+        dataContext.Rna = new Rna(dataContext.RnaString);
+
+        dataContext.CurrentRnaSequenceIndex = 0;
+
     }
 }

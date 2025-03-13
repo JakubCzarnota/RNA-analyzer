@@ -1,19 +1,16 @@
 using System;
+using System.Collections.Generic;
 using System.Globalization;
 using Avalonia.Data.Converters;
 using CoreAnalyzer;
 
 namespace AnalyzerGui.Converters;
 
-public class ProteinCountConverter : IValueConverter
-    
+public class ProteinCountInRnaSequenceConverter : IValueConverter
 {
     public object? Convert(object? value, Type targetType, object? parameter, CultureInfo culture)
     {
-        if (value is not Rna rna)
-            return 0;
-        
-        return int.TryParse(parameter as string, out var i) ? rna.Proteins[i].Count : 0;
+        return value is not List<Protein> proteins ? 0 : proteins.Count;
     }
 
     public object? ConvertBack(object? value, Type targetType, object? parameter, CultureInfo culture)

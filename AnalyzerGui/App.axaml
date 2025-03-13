@@ -8,6 +8,8 @@
 
     <Application.Resources>
         <cv:ProteinCountConverter x:Key="ProteinCount"/>
+        <cv:ProteinCountInRnaSequenceConverter x:Key="ProteinCountInRnaSequence"/>
+        <cv:AddToNumberConverter x:Key="AddToNumber"/>
     </Application.Resources>
              
     <Application.DataTemplates>
