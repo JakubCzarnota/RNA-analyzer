@@ -1,0 +1,35 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:AnalyzerGui.ViewModels"
+             xmlns:viewModels="clr-namespace:AnalyzerGui.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="AnalyzerGui.Views.AminoAcidsInProteinDisplay"
+             x:DataType="viewModels:RnaSharedViewModel">
+    
+    <Design.DataContext>
+        <vm:RnaSharedViewModel/>
+    </Design.DataContext>
+    
+    <StackPanel Orientation="Vertical">
+        
+        <StackPanel Orientation="Horizontal" MinHeight="200">
+            
+            <Panel MinHeight="200" Width="200" Background="White">
+                <Image Source="{Binding CurrentAminoAcidImg}"/>
+            </Panel>
+            
+            <ContentControl Content="{Binding CurrentAminoAcidPropertiesPanel}"/>
+            
+        </StackPanel>
+        
+        <ScrollViewer AllowAutoHide="False" HorizontalScrollBarVisibility="Visible" MinHeight="100" MinWidth="100">
+            <ContentControl Content="{Binding AminoAcidsImgs}"/>
+        </ScrollViewer>
+        
+        <ContentControl Content="{Binding PickerButtons}"/>
+        
+    </StackPanel>
+    
+</UserControl>

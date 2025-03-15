@@ -18,7 +18,8 @@ public partial class MainWindowViewModel : ViewModelBase
         UserControls =
         [
             new RnaInputUserControl() { DataContext = sharedViewModel },
-            new ProteinOverviewUserControl()  { DataContext = sharedViewModel }
+            new ProteinOverviewUserControl()  { DataContext = sharedViewModel },
+            new AminoAcidsInProteinDisplay() { DataContext = sharedViewModel }
         ];
 
         _currentUserControl = UserControls[0];

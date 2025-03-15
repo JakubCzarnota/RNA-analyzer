@@ -16,7 +16,7 @@
     "MolarAbsorptivityWavelength": null,
     "MolarAbsorptivityCoefficient": null,
     "MolecularMass": 89.094,
-    "AbundanceInProteins": 8.76,
+    "AbundanceInProteinsPercentage": 8.76,
     "StandardGeneticCodingNotation": [
       "GCN"
     ],
@@ -41,7 +41,7 @@
     "MolarAbsorptivityWavelength": null,
     "MolarAbsorptivityCoefficient": null,
     "MolecularMass": 174.203,
-    "AbundanceInProteins": 5.78,
+    "AbundanceInProteinsPercentage": 5.78,
     "StandardGeneticCodingNotation": [
       "MGR",
       "CGY"
@@ -63,7 +63,7 @@
     "MolarAbsorptivityWavelength": null,
     "MolarAbsorptivityCoefficient": null,
     "MolecularMass": 132.119,
-    "AbundanceInProteins": 3.93,
+    "AbundanceInProteinsPercentage": 3.93,
     "StandardGeneticCodingNotation": [
       "AAY"
     ],
@@ -84,7 +84,7 @@
     "MolarAbsorptivityWavelength": null,
     "MolarAbsorptivityCoefficient": null,
     "MolecularMass": 133.104,
-    "AbundanceInProteins": 5.49,
+    "AbundanceInProteinsPercentage": 5.49,
     "StandardGeneticCodingNotation": [
       "GAY"
     ],
@@ -109,7 +109,7 @@
       "0.3"
     ],
     "MolecularMass": 121.154,
-    "AbundanceInProteins": 1.38,
+    "AbundanceInProteinsPercentage": 1.38,
     "StandardGeneticCodingNotation": [
       "UGY"
     ],
@@ -130,7 +130,7 @@
     "MolarAbsorptivityWavelength": null,
     "MolarAbsorptivityCoefficient": null,
     "MolecularMass": 146.146,
-    "AbundanceInProteins": 3.93,
+    "AbundanceInProteinsPercentage": 3.93,
     "StandardGeneticCodingNotation": [
       "GAR"
     ],
@@ -151,7 +151,7 @@
     "MolarAbsorptivityWavelength": null,
     "MolarAbsorptivityCoefficient": null,
     "MolecularMass": 147.131,
-    "AbundanceInProteins": 6.74,
+    "AbundanceInProteinsPercentage": 6.74,
     "StandardGeneticCodingNotation": [
       "CAR"
     ],
@@ -174,7 +174,7 @@
     "MolarAbsorptivityWavelength": null,
     "MolarAbsorptivityCoefficient": null,
     "MolecularMass": 75.067,
-    "AbundanceInProteins": 7.03,
+    "AbundanceInProteinsPercentage": 7.03,
     "StandardGeneticCodingNotation": [
       "GGN"
     ],
@@ -199,7 +199,7 @@
       5.9
     ],
     "MolecularMass": 155.156,
-    "AbundanceInProteins": 2.18,
+    "AbundanceInProteinsPercentage": 2.18,
     "StandardGeneticCodingNotation": [
       "CAY"
     ],
@@ -221,7 +221,7 @@
     "MolarAbsorptivityWavelength": null,
     "MolarAbsorptivityCoefficient": null,
     "MolecularMass": 131.175,
-    "AbundanceInProteins": 5.49,
+    "AbundanceInProteinsPercentage": 5.49,
     "StandardGeneticCodingNotation": [
       "AUH"
     ],
@@ -246,7 +246,7 @@
     "MolarAbsorptivityWavelength": null,
     "MolarAbsorptivityCoefficient": null,
     "MolecularMass": 131.175,
-    "AbundanceInProteins": 9.68,
+    "AbundanceInProteinsPercentage": 9.68,
     "StandardGeneticCodingNotation": [
       "YUR",
       "CUY"
@@ -268,7 +268,7 @@
     "MolarAbsorptivityWavelength": null,
     "MolarAbsorptivityCoefficient": null,
     "MolecularMass": 146.19,
-    "AbundanceInProteins": 5.95,
+    "AbundanceInProteinsPercentage": 5.95,
     "StandardGeneticCodingNotation": [
       "AAR"
     ],
@@ -288,7 +288,7 @@
     "MolarAbsorptivityWavelength": null,
     "MolarAbsorptivityCoefficient": null,
     "MolecularMass": 149.208,
-    "AbundanceInProteins": 2.28,
+    "AbundanceInProteinsPercentage": 2.28,
     "StandardGeneticCodingNotation": [
       "AUG"
     ],
@@ -317,7 +317,7 @@
       60.0
     ],
     "MolecularMass": 165.192,
-    "AbundanceInProteins": 3.87,
+    "AbundanceInProteinsPercentage": 3.87,
     "StandardGeneticCodingNotation": [
       "UUY"
     ],
@@ -340,7 +340,7 @@
     "MolarAbsorptivityWavelength": null,
     "MolarAbsorptivityCoefficient": null,
     "MolecularMass": 115.132,
-    "AbundanceInProteins": 5.09,
+    "AbundanceInProteinsPercentage": 5.09,
     "StandardGeneticCodingNotation": [
       "CCN"
     ],
@@ -365,7 +365,7 @@
     "MolarAbsorptivityWavelength": null,
     "MolarAbsorptivityCoefficient": null,
     "MolecularMass": 105.093,
-    "AbundanceInProteins": 7.08,
+    "AbundanceInProteinsPercentage": 7.08,
     "StandardGeneticCodingNotation": [
       "UCN",
       "AGY"
@@ -389,7 +389,7 @@
     "MolarAbsorptivityWavelength": null,
     "MolarAbsorptivityCoefficient": null,
     "MolecularMass": 119.119,
-    "AbundanceInProteins": 5.53,
+    "AbundanceInProteinsPercentage": 5.53,
     "StandardGeneticCodingNotation": [
       "ACN"
     ],
@@ -415,7 +415,7 @@
       47.0
     ],
     "MolecularMass": 204.228,
-    "AbundanceInProteins": 1.18,
+    "AbundanceInProteinsPercentage": 1.18,
     "StandardGeneticCodingNotation": [
       "UGG"
     ],
@@ -444,7 +444,7 @@
       48.0
     ],
     "MolecularMass": 181.191,
-    "AbundanceInProteins": 3.38,
+    "AbundanceInProteinsPercentage": 3.38,
     "StandardGeneticCodingNotation": [
       "UAY"
     ],
@@ -467,7 +467,7 @@
     "MolarAbsorptivityWavelength": null,
     "MolarAbsorptivityCoefficient": null,
     "MolecularMass": 117.148,
-    "AbundanceInProteins": 6.86,
+    "AbundanceInProteinsPercentage": 6.86,
     "StandardGeneticCodingNotation": [
       "GUN"
     ],

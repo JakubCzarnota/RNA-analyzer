@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        MaxHeight="1080" MaxWidth="1920"
         x:Class="AnalyzerGui.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
@@ -21,6 +22,7 @@
             
             <Button Click="Button_OnClick" Tag="0">Input Rna</Button>
             <Button Click="Button_OnClick" Tag="1">Protein Overview</Button>
+            <Button Click="Button_OnClick" Tag="2">Amino Acids</Button>
             
         </StackPanel>
         
