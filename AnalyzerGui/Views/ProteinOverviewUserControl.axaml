@@ -6,19 +6,19 @@
              xmlns:viewModels="clr-namespace:AnalyzerGui.ViewModels"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="AnalyzerGui.Views.ProteinOverviewUserControl"
-             x:DataType="viewModels:RnaSharedViewModel">
+             x:DataType="viewModels:ProteinOverviewViewModel">
     
     <Design.DataContext>
-        <vm:RnaSharedViewModel/>
+        <vm:ProteinOverviewViewModel/>
     </Design.DataContext>
     
     <StackPanel Orientation="Vertical" >
         
-        <Label Content="{Binding Rna, Mode=OneWay, Converter={StaticResource ProteinCount}, ConverterParameter=0}" />
-        <Label Content="{Binding Rna, Mode=OneWay, Converter={StaticResource ProteinCount}, ConverterParameter=1}" />
-        <Label Content="{Binding Rna, Mode=OneWay, Converter={StaticResource ProteinCount}, ConverterParameter=2}" />
+        <Label Content="{Binding Shared.Rna, Mode=OneWay, Converter={StaticResource ProteinCount}, ConverterParameter=0}" />
+        <Label Content="{Binding Shared.Rna, Mode=OneWay, Converter={StaticResource ProteinCount}, ConverterParameter=1}" />
+        <Label Content="{Binding Shared.Rna, Mode=OneWay, Converter={StaticResource ProteinCount}, ConverterParameter=2}" />
         
-        <ContentControl Content="{Binding PickerButtons}"/>
+        <ContentControl Content="{Binding Shared.PickerButtons}"/>
         
     </StackPanel>
     

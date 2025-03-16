@@ -6,10 +6,10 @@
              xmlns:viewModels="clr-namespace:AnalyzerGui.ViewModels"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="AnalyzerGui.Views.AminoAcidsInProteinDisplay"
-             x:DataType="viewModels:RnaSharedViewModel">
+             x:DataType="viewModels:AminoAcidsInProteinDisplayViewModel">
     
     <Design.DataContext>
-        <vm:RnaSharedViewModel/>
+        <vm:AminoAcidsInProteinDisplayViewModel/>
     </Design.DataContext>
     
     <StackPanel Orientation="Vertical">
@@ -28,7 +28,7 @@
             <ContentControl Content="{Binding AminoAcidsImgs}"/>
         </ScrollViewer>
         
-        <ContentControl Content="{Binding PickerButtons}"/>
+        <ContentControl Content="{Binding Shared.PickerButtons}"/>
         
     </StackPanel>
     

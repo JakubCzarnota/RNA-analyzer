@@ -19,15 +19,15 @@ public partial class PickerButtons : UserControl
         
         var tag = button.Tag as string;
 
-        var dataContext = (RnaSharedViewModel)this.DataContext!;
+        var dataContext = (PickerButtonsViewModel)this.DataContext!;
         
         switch (tag)
         {
             case "+":
-                dataContext.CurrentRnaSequenceIndex++;
+                dataContext.Shared.CurrentRnaSequenceIndex++;
                 break;
             case "-":
-                dataContext.CurrentRnaSequenceIndex--;
+                dataContext.Shared.CurrentRnaSequenceIndex--;
                 break;
         }
     }
@@ -38,15 +38,15 @@ public partial class PickerButtons : UserControl
         
         var tag = button.Tag as string;
 
-        var dataContext = (RnaSharedViewModel)this.DataContext!;
+        var dataContext = (PickerButtonsViewModel)this.DataContext!;
         
         switch (tag)
         {
             case "+":
-                dataContext.CurrentProteinIndex++;
+                dataContext.Shared.CurrentProteinIndex++;
                 break;
             case "-":
-                dataContext.CurrentProteinIndex--;
+                dataContext.Shared.CurrentProteinIndex--;
                 break;
         }
     }

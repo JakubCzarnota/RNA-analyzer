@@ -6,14 +6,14 @@
              xmlns:viewModels="clr-namespace:AnalyzerGui.ViewModels"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="AnalyzerGui.Views.RnaInputUserControl"
-             x:DataType="viewModels:RnaSharedViewModel">
+             x:DataType="viewModels:RnaInputUserControlViewModel">
     
     <Design.DataContext>
-        <vm:RnaSharedViewModel/>
+        <vm:RnaInputUserControlViewModel/>
     </Design.DataContext>
     
     <StackPanel Orientation="Vertical">
-        <TextBox Text="{Binding RnaString, Mode=TwoWay}" />
+        <TextBox Text="{Binding Shared.RnaString, Mode=TwoWay}" />
         <Button Click="Button_OnClick"/>
     </StackPanel>
 

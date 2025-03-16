@@ -1,4 +1,5 @@
-﻿using AnalyzerGui.Views;
+﻿using AnalyzerGui.Models;
+using AnalyzerGui.Views;
 using Avalonia.Controls;
 using CommunityToolkit.Mvvm.ComponentModel;
 
@@ -13,13 +14,13 @@ public partial class MainWindowViewModel : ViewModelBase
     
     public MainWindowViewModel()
     {
-        var sharedViewModel = new RnaSharedViewModel();
+        var sharedData = new SharedData();
 
         UserControls =
         [
-            new RnaInputUserControl() { DataContext = sharedViewModel },
-            new ProteinOverviewUserControl()  { DataContext = sharedViewModel },
-            new AminoAcidsInProteinDisplay() { DataContext = sharedViewModel }
+            new RnaInputUserControl() { DataContext = new RnaInputUserControlViewModel(sharedData)},
+            new ProteinOverviewUserControl()  { DataContext = new ProteinOverviewViewModel(sharedData) },
+            new AminoAcidsInProteinDisplay() { DataContext = new AminoAcidsInProteinDisplayViewModel(sharedData) }
         ];
 
         _currentUserControl = UserControls[0];
