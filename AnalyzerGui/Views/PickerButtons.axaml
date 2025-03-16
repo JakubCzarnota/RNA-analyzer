@@ -18,7 +18,7 @@
         <StackPanel Orientation="Horizontal">
             <Button Click="ChangeRnaSequence" Tag="-">-</Button>
             <TextBlock>
-                <Run Text="{Binding CurrentRnaSequenceIndex, Converter={StaticResource AddToNumber}, ConverterParameter=1}"/>
+                <Run Text="{Binding CurrentRnaSequenceIndex, Mode=OneWay,Converter={StaticResource AddToNumber}, ConverterParameter=1}"/>
                 <Run Text="/"/>
                 <Run Text="3"/>
             </TextBlock>
@@ -29,9 +29,9 @@
         <StackPanel Orientation="Horizontal">
             <Button Click="ChangeProtein" Tag="-">-</Button>
             <TextBlock>
-                <Run Text="{Binding CurrentProteinIndex, Converter={StaticResource AddToNumber}, ConverterParameter=1}"/>
+                <Run Text="{Binding CurrentProteinIndex, Mode=OneWay, Converter={StaticResource AddToNumber}, ConverterParameter=1}"/>
                 <Run Text="/"/>
-                <Run Text="{Binding CurrentRnaSequence, Converter={StaticResource ProteinCountInRnaSequence}}"/>
+                <Run Text="{Binding CurrentRnaSequence, Mode=OneWay, Converter={StaticResource ProteinCountInRnaSequence}}"/>
             </TextBlock>
             <Button Click="ChangeProtein" Tag="+">+</Button>
         </StackPanel>

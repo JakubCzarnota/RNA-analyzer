@@ -14,9 +14,9 @@
     
     <StackPanel Orientation="Vertical" >
         
-        <Label Content="{Binding Rna, Converter={StaticResource ProteinCount}, ConverterParameter=0}" />
-        <Label Content="{Binding Rna, Converter={StaticResource ProteinCount}, ConverterParameter=1}" />
-        <Label Content="{Binding Rna, Converter={StaticResource ProteinCount}, ConverterParameter=2}" />
+        <Label Content="{Binding Rna, Mode=OneWay, Converter={StaticResource ProteinCount}, ConverterParameter=0}" />
+        <Label Content="{Binding Rna, Mode=OneWay, Converter={StaticResource ProteinCount}, ConverterParameter=1}" />
+        <Label Content="{Binding Rna, Mode=OneWay, Converter={StaticResource ProteinCount}, ConverterParameter=2}" />
         
         <ContentControl Content="{Binding PickerButtons}"/>
         
