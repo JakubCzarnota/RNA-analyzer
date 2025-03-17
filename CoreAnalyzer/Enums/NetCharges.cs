@@ -2,8 +2,8 @@ namespace CoreAnalyzer.Enums
 {
     public enum NetCharges
     {
-        Negative,
-        Neutral,
-        Positive,
+        Negative = -1,
+        Neutral = 0,
+        Positive = 1,
     }
 }
