@@ -3,7 +3,7 @@
              x:Class="AnalyzerGui.App"
              xmlns:cv="using:AnalyzerGui.Converters"
              xmlns:local="using:AnalyzerGui"
-             RequestedThemeVariant="Default">
+             RequestedThemeVariant="Dark">
              <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
 
     <Application.Resources>
