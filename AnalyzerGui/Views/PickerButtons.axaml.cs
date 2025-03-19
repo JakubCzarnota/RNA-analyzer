@@ -1,3 +1,4 @@
+using AnalyzerGui.Scaling;
 using AnalyzerGui.ViewModels;
 using Avalonia;
 using Avalonia.Controls;
@@ -6,7 +7,7 @@ using Avalonia.Markup.Xaml;
 
 namespace AnalyzerGui.Views;
 
-public partial class PickerButtons : UserControl
+public partial class PickerButtons : ScalableUserControl
 {
     public PickerButtons()
     {

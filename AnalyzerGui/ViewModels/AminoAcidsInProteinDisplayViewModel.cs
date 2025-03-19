@@ -1,4 +1,5 @@
 using AnalyzerGui.Models;
+using AnalyzerGui.Scaling;
 using Avalonia.Controls;
 using Avalonia.Layout;
 using Avalonia.Media;
@@ -17,25 +18,46 @@ public partial class AminoAcidsInProteinDisplayViewModel : PageViewModelBase
     )! + "/";
     
     [ObservableProperty]
-    private Bitmap? _currentAminoAcidImg =  null;
+    private Bitmap? _currentAminoAcidImg;
     
     [ObservableProperty]
     private StackPanel _aminoAcidsImgs = new ();
-  
+
+    private ScalableObject? _currentAminoAcidPropertiesPanelScalable;
+    
+    private ScalableObject? _aminoAcidsImgsScalable;
+    
     [ObservableProperty] 
     private StackPanel _currentAminoAcidPropertiesPanel = new ();
     
-    public AminoAcidsInProteinDisplayViewModel(SharedData shared) : base(shared)
+    public AminoAcidsInProteinDisplayViewModel(SharedData shared) : base(shared) 
     {
+        ScaleAction = () =>
+        {
+          _currentAminoAcidPropertiesPanelScalable?.Scale(Scale);
+          _aminoAcidsImgsScalable?.Scale(Scale);
+        };
+      
         shared.OnCurrentProteinChange.Add(protein =>
         {
-          AminoAcidsImgs = GetAminoAcidsImgsList(protein);
+          var imgs = GetAminoAcidsImgsList(protein);
+          AminoAcidsImgs = imgs;
+
+          var scalable = new ScalableObject(imgs);
+          _aminoAcidsImgsScalable = scalable;
+          scalable.Scale(Scale);
         });
         
         shared.OnCurrentAminoAcidChange.Add(aminoAcid =>
         {
           CurrentAminoAcidImg = GetAminoAcidBitmap(aminoAcid);
-          CurrentAminoAcidPropertiesPanel = GetAminoAcidPropertiesPanel(aminoAcid);
+          
+          var stackPanel = GetAminoAcidPropertiesPanel(aminoAcid);
+          CurrentAminoAcidPropertiesPanel = stackPanel;
+
+          var scalableStackPanel = new ScalableObject(stackPanel);
+          _currentAminoAcidPropertiesPanelScalable = scalableStackPanel;
+          scalableStackPanel.Scale(Scale);
         });
     }
 
@@ -45,37 +67,37 @@ public partial class AminoAcidsInProteinDisplayViewModel : PageViewModelBase
     }
     
     private StackPanel GetAminoAcidPropertiesPanel(AminoAcid aminoAcid)
-  {
-    var stackPanel = new StackPanel();
-    
-    if(Shared.CurrentAminoAcid is null)
-      return stackPanel;
-    
-    var properties = typeof(AminoAcid).GetProperties();
-
-    foreach (var property in properties)
     {
-      var name = Replace(
-        Replace(
-          property.Name,
-          @"(\P{Ll})(\P{Ll}\p{Ll})",
-          "$1 $2"
-        ),
-        @"(\p{Ll})(\P{Ll})",
-        "$1 $2").CapitalizeOnlyFirstLetter();
+      var stackPanel = new StackPanel();
       
-      var value = property.GetValue(aminoAcid);
+      if(Shared.CurrentAminoAcid is null)
+        return stackPanel;
+      
+      var properties = typeof(AminoAcid).GetProperties();
 
-      stackPanel.Children.Add(
-        new TextBlock()
-        {
-          Text = $"{name}: {value.FormatedToString()}",
-        }
-      );
+      foreach (var property in properties)
+      {
+        var name = Replace(
+          Replace(
+            property.Name,
+            @"(\P{Ll})(\P{Ll}\p{Ll})",
+            "$1 $2"
+          ),
+          @"(\p{Ll})(\P{Ll})",
+          "$1 $2").CapitalizeOnlyFirstLetter();
+        
+        var value = property.GetValue(aminoAcid);
+
+        stackPanel.Children.Add(
+          new TextBlock()
+          {
+            Text = $"{name}: {value.FormatedToString()}",
+          }
+        );
+      }
+      
+      return stackPanel;
     }
-    
-    return stackPanel;
-  }
 
     private StackPanel GetAminoAcidsImgsList(Protein protein)
     {

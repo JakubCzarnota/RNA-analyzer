@@ -1,4 +1,5 @@
 using System;
+using AnalyzerGui.Scaling;
 using AnalyzerGui.ViewModels;
 using Avalonia;
 using Avalonia.Controls;
@@ -8,12 +9,13 @@ using CoreAnalyzer;
 
 namespace AnalyzerGui.Views;
 
-public partial class RnaInputUserControl : UserControl
+public partial class RnaInputUserControl : PageBase
 {
     public RnaInputUserControl()
     {
         InitializeComponent();
     }
+    
 
     private void Button_OnClick(object? sender, RoutedEventArgs e)
     {

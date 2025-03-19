@@ -43,4 +43,14 @@ public static class Utils
             collection.Add(value);
         }
     }
+
+    public static ICollection<T> Add<T>(this ICollection<T> collection, ICollection<T> values)
+    {
+        foreach (var value in values)
+        {
+            collection.Add(value);
+        }
+
+        return collection;
+    }
 }

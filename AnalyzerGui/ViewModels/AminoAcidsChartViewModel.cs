@@ -64,6 +64,8 @@ public partial class AminoAcidsChartViewModel : PageViewModelBase
                 _charts[i].Series.ForEach(s => Series.Add(s));
                 XAxis.ReplaceValuesWith(_charts[i].XAxis);
                 YAxis.ReplaceValuesWith(_charts[i].YAxis);
+                
+                InvokeScale?.Invoke();
             }
         };
         
@@ -79,6 +81,8 @@ public partial class AminoAcidsChartViewModel : PageViewModelBase
                 _charts[i].Series.ForEach(s => Series.Add(s));
                 XAxis.ReplaceValuesWith(_charts[i].XAxis);
                 YAxis.ReplaceValuesWith(_charts[i].YAxis);
+                
+                InvokeScale?.Invoke();
             }
         });
     }

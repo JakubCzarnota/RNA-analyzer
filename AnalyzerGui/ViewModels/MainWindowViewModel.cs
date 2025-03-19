@@ -1,19 +1,36 @@
-﻿using AnalyzerGui.Models;
+﻿using System;
+using AnalyzerGui.Models;
+using AnalyzerGui.Scaling;
 using AnalyzerGui.Views;
-using Avalonia.Controls;
 using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace AnalyzerGui.ViewModels;
 
 public partial class MainWindowViewModel : ViewModelBase
 {
-    [ObservableProperty]
-    private UserControl _currentUserControl;
-
-    public UserControl[] UserControls { get; private set; }
+    public Action<double> OnScaleChanged { get; set; } = d => { };
     
-    public MainWindowViewModel()
+    private double _scale;
+
+    public double Scale
     {
+        get => _scale;
+        set
+        {
+            SetProperty(ref _scale, value);
+            OnScaleChanged(value);
+        }
+    }
+
+    [ObservableProperty]
+    private PageBase _currentUserControl;
+
+    public PageBase[] UserControls { get; private set; }
+    
+    public MainWindowViewModel(double scaleFactor = 1)
+    {
+        Scale = scaleFactor;
+        
         var sharedData = new SharedData();
 
         UserControls =
