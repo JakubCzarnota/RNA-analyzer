@@ -20,6 +20,7 @@ public partial class MainWindowViewModel : ViewModelBase
         [
             new RnaInputUserControl() { DataContext = new RnaInputUserControlViewModel(sharedData)},
             new ProteinOverviewUserControl()  { DataContext = new ProteinOverviewViewModel(sharedData) },
+            new AminoAcidsChart() { DataContext = new AminoAcidsChartViewModel(sharedData) },
             new AminoAcidsInProteinDisplay() { DataContext = new AminoAcidsInProteinDisplayViewModel(sharedData) }
         ];
 

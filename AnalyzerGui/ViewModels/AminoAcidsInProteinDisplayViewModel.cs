@@ -122,6 +122,6 @@ public partial class AminoAcidsInProteinDisplayViewModel : PageViewModelBase
       return stackPanel;
     }
 
-    private Bitmap GetAminoAcidBitmap(AminoAcid aminoAcid) =>
-      new Bitmap($"{_currentDirectory}aminoacids/{aminoAcid.Symbol3.ToLower()}.png");
+    private Bitmap? GetAminoAcidBitmap(AminoAcid? aminoAcid) => 
+      aminoAcid is not null ? new Bitmap($"{_currentDirectory}aminoacids/{aminoAcid.Symbol3.ToLower()}.png") : null;
 }

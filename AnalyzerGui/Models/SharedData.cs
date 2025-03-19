@@ -71,7 +71,7 @@ public partial class SharedData : ObservableObject
   {
     get => _currentProteinIndex;
     set {
-      if (Rna is null || CurrentRnaSequence is null)
+      if (Rna is null || CurrentRnaSequence is null || CurrentRnaSequence.Count < 1)
       {
         SetProperty(ref _currentProteinIndex, -1);
         CurrentProtein = null;
