@@ -20,10 +20,6 @@ public abstract class PageBase : ScalableUserControl
     {
         base.OnLoaded(e);
         
-        var dataContext = this.DataContext as PageViewModelBase;
-
-        dataContext!.InvokeScale = Scale;
-        
-        Scale(dataContext!.Scale);
+        Scale();
     }
 }
