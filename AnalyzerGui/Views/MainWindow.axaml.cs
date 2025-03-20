@@ -23,6 +23,7 @@ public partial class MainWindow : ScalableWindow
         var dataContext = this.DataContext as MainWindowViewModel;
         
         dataContext!.Scale = _options.SavedScale;
+        ChangeScale(_options.SavedScale);
         dataContext!.OnScaleChanged = ChangeScale;
         
         Scale(dataContext!.Scale);

@@ -13,10 +13,21 @@
     </Design.DataContext>
     
     <StackPanel Orientation="Vertical" >
+
+        <TextBlock>
+            <Run Text="Proteins in first RNA sequence: "/>
+            <Run Text="{Binding Shared.Rna, Mode=OneWay, Converter={StaticResource ProteinCount}, ConverterParameter=0}" />    
+        </TextBlock>
         
-        <Label Content="{Binding Shared.Rna, Mode=OneWay, Converter={StaticResource ProteinCount}, ConverterParameter=0}" />
-        <Label Content="{Binding Shared.Rna, Mode=OneWay, Converter={StaticResource ProteinCount}, ConverterParameter=1}" />
-        <Label Content="{Binding Shared.Rna, Mode=OneWay, Converter={StaticResource ProteinCount}, ConverterParameter=2}" />
+        <TextBlock>
+            <Run Text="Proteins in second RNA sequence: "/>
+            <Run Text="{Binding Shared.Rna, Mode=OneWay, Converter={StaticResource ProteinCount}, ConverterParameter=2}" />    
+        </TextBlock>
+        
+        <TextBlock>
+            <Run Text="Proteins in third RNA sequence: "/>
+            <Run Text="{Binding Shared.Rna, Mode=OneWay, Converter={StaticResource ProteinCount}, ConverterParameter=3}" />    
+        </TextBlock>
         
         <ContentControl Content="{Binding Shared.PickerButtons}"/>
         
