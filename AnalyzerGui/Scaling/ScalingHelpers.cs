@@ -10,7 +10,7 @@ namespace AnalyzerGui.Scaling;
 
 public static class ScalingHelpers
 {
-    public static List<IScalable> GenerateScalablesProperties(this Button button) =>
+    public static List<IScalable> GenerateScalableProperties(this Button button) =>
     [
         new ScalableProperty<Button, double>(
             button,
@@ -42,7 +42,7 @@ public static class ScalingHelpers
             }),
     ];
 
-    public static List<IScalable> GenerateScalablesProperties(this TextBlock textBlock) =>
+    public static List<IScalable> GenerateScalableProperties(this TextBlock textBlock) =>
     [
         new ScalableProperty<TextBlock, double>(
             textBlock,
@@ -74,7 +74,7 @@ public static class ScalingHelpers
             }),
     ];
     
-    public static List<IScalable> GenerateScalablesProperties(this TextBox textBox) =>
+    public static List<IScalable> GenerateScalableProperties(this TextBox textBox) =>
     [
         new ScalableProperty<TextBox, double>(
             textBox,
@@ -106,7 +106,7 @@ public static class ScalingHelpers
             }),
     ];
     
-    public static List<IScalable> GenerateScalablesProperties(this ComboBox comboBox) =>
+    public static List<IScalable> GenerateScalableProperties(this ComboBox comboBox) =>
     [
         new ScalableProperty<ComboBox, double>(
             comboBox,
@@ -138,7 +138,7 @@ public static class ScalingHelpers
             }),
     ];
 
-    public static List<IScalable> GenerateScalablesProperties(this Label label) =>
+    public static List<IScalable> GenerateScalableProperties(this Label label) =>
     [
         new ScalableProperty<Label, double>(
             label,
@@ -170,7 +170,7 @@ public static class ScalingHelpers
             }),
     ];
 
-    public static List<IScalable> GenerateScalablesProperties(this Image image) =>
+    public static List<IScalable> GenerateScalableProperties(this Image image) =>
     [
         new ScalableProperty<Image, double>(
             image,
@@ -188,7 +188,7 @@ public static class ScalingHelpers
             }),
     ];
     
-    public static List<IScalable> GenerateScalablesProperties(this Panel panel) =>
+    public static List<IScalable> GenerateScalableProperties(this Panel panel) =>
     [
         new ScalableProperty<Panel, double>(
             panel,
@@ -206,7 +206,7 @@ public static class ScalingHelpers
             }),
     ];
 
-    public static List<IScalable> GenerateScalablesProperties(this StackPanel stackPanel) =>
+    public static List<IScalable> GenerateScalableProperties(this StackPanel stackPanel) =>
     [
         new ScalableProperty<StackPanel, double>(
             stackPanel,
@@ -224,7 +224,7 @@ public static class ScalingHelpers
             }),
     ];
 
-    public static List<IScalable> GenerateScalablesProperties(this CartesianChart cartesianChart) =>
+    public static List<IScalable> GenerateScalableProperties(this CartesianChart cartesianChart) =>
     [
         new ScalableProperty<CartesianChart, List<double>>(
             cartesianChart,

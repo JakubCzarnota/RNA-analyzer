@@ -18,31 +18,31 @@ public class ScalableObject : IScalable
         switch (control)
         {
             case Button button:
-                _scalables.Add(button.GenerateScalablesProperties());
+                _scalables.Add(button.GenerateScalableProperties());
                 break;
             case TextBlock textBlock:
-                _scalables.Add(textBlock.GenerateScalablesProperties());
+                _scalables.Add(textBlock.GenerateScalableProperties());
                 break;
             case TextBox textBox:
-                _scalables.Add(textBox.GenerateScalablesProperties());
+                _scalables.Add(textBox.GenerateScalableProperties());
                 break;
             case ComboBox comboBox:
-                _scalables.Add(comboBox.GenerateScalablesProperties());
+                _scalables.Add(comboBox.GenerateScalableProperties());
                 break;
             case Label label:
-                _scalables.Add(label.GenerateScalablesProperties());
+                _scalables.Add(label.GenerateScalableProperties());
                 break;
             case Image image:
-                _scalables.Add(image.GenerateScalablesProperties());
+                _scalables.Add(image.GenerateScalableProperties());
                 break;
             case StackPanel stackPanel:
-                _scalables.Add(stackPanel.GenerateScalablesProperties());
+                _scalables.Add(stackPanel.GenerateScalableProperties());
                 break;
             case Panel panel:
-                _scalables.Add(panel.GenerateScalablesProperties());
+                _scalables.Add(panel.GenerateScalableProperties());
                 break;
             case CartesianChart cartesianChart:
-                _scalables.Add(cartesianChart.GenerateScalablesProperties());
+                _scalables.Add(cartesianChart.GenerateScalableProperties());
                 break;
         }
 
