@@ -14,26 +14,26 @@
     
     <StackPanel Orientation="Vertical">
         
-        <Label>Rna sequence:</Label>
-        <StackPanel Orientation="Horizontal">
-            <Button Click="ChangeRnaSequence" Tag="-">-</Button>
-            <TextBlock>
+        <Label HorizontalAlignment="Center">Rna sequence:</Label>
+        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+            <Button VerticalAlignment="Center" Click="ChangeRnaSequence" Tag="-">-</Button>
+            <TextBlock VerticalAlignment="Center">
                 <Run Text="{Binding Shared.CurrentRnaSequenceIndex, Mode=OneWay,Converter={StaticResource AddToNumber}, ConverterParameter=1}"/>
                 <Run Text="/"/>
                 <Run Text="3"/>
             </TextBlock>
-            <Button Click="ChangeRnaSequence" Tag="+">+</Button>
+            <Button VerticalAlignment="Center" Click="ChangeRnaSequence" Tag="+">+</Button>
         </StackPanel>
 
-        <Label>Protein</Label>
-        <StackPanel Orientation="Horizontal">
-            <Button Click="ChangeProtein" Tag="-">-</Button>
-            <TextBlock>
+        <Label HorizontalAlignment="Center">Protein</Label>
+        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+            <Button VerticalAlignment="Center" Click="ChangeProtein" Tag="-">-</Button>
+            <TextBlock VerticalAlignment="Center">
                 <Run Text="{Binding Shared.CurrentProteinIndex, Mode=OneWay, Converter={StaticResource AddToNumber}, ConverterParameter=1}"/>
                 <Run Text="/"/>
                 <Run Text="{Binding Shared.CurrentRnaSequence, Mode=OneWay, Converter={StaticResource ProteinCountInRnaSequence}}"/>
             </TextBlock>
-            <Button Click="ChangeProtein" Tag="+">+</Button>
+            <Button VerticalAlignment="Center" Click="ChangeProtein" Tag="+">+</Button>
         </StackPanel>
         
     </StackPanel>
